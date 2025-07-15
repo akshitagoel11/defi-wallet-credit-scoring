@@ -1,0 +1,32 @@
+#  Credit Score Analysis
+
+##  Score Distribution
+
+![Score Distribution](score_distribution.png)
+
+###  Score Ranges and Insights
+
+| Score Range | Number of Wallets | Behavior Insight |
+|-------------|--------------------|------------------|
+| 0–100       | Few                | Very risky wallets with liquidations or no repayments |
+| 100–200     | Few                | High borrow/low repay or idle behavior |
+| 300–400     | Moderate           | Base score only, little to no activity |
+| 400–500     | Most wallets       | Deposits only or some limited interactions |
+| 600–800     | Few                | Good repayment behavior with no liquidations |
+| 900–1000    | Rare               | Excellent wallets with consistent repayments and no risky actions |
+
+###  Observations
+
+- Most wallets received scores around **400–450**, aligning with the base score logic.
+- **High-scoring wallets (900+)** had a combination of:
+  - High deposits
+  - High repayments
+  - No liquidations
+- **Low-scoring wallets (below 300)** showed:
+  - High borrow counts
+  - Little or no repayment
+  - Some had liquidation calls, heavily penalizing their score
+
+---
+
+This distribution helps highlight which wallets are reliable participants in DeFi, and which may be bots, risk-prone users, or exploiters.
